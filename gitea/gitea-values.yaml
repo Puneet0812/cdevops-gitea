@@ -1,0 +1,27 @@
+persistence:
+  enabled: true
+
+postgresql:
+  enabled: false
+redis:
+  enabled: false
+mysql:
+  enabled: false
+
+externalDatabase:
+  host: gitea-mysql.gitea.svc.cluster.local
+  port: 3306
+  database: gitea
+  user: gitea
+  password: gitea123
+
+gitea:
+  config:
+    database:
+      DB_TYPE: mysql
+      HOST: gitea-mysql.gitea.svc.cluster.local:3306
+      NAME: gitea
+      USER: gitea
+      PASSWD: gitea123
+
+

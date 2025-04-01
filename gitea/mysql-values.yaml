@@ -1,0 +1,9 @@
+auth:
+  rootPassword: MyRootPass123
+  database: gitea
+  username: gitea
+  password: gitea123
+primary:
+  persistence:
+    enabled: true
+    size: 1Gi
